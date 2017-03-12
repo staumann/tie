@@ -1,0 +1,84 @@
+* {
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 16px;
+}
+
+input,
+select,
+textarea,
+option {
+	color: #555;
+}
+
+
+
+.app-wrapper {
+	width: 800px;
+	margin: 0 auto;
+	background-color: #15191F;
+	padding: 1rem;
+}
+
+.app-wrapper .header {
+	padding-top: 1rem;
+	
+	padding-bottom: 1rem;
+}
+
+.app-wrapper .header .button-container {
+	float: right; 
+}
+.cf:after {
+   content: ".";
+   display: block;
+   height: 0;
+   line-height: 0;
+   clear: both;
+   visibility: hidden;
+}
+
+.global-button-1 {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0.5rem 1rem;
+	color: #fff;
+	background-color: #959595;
+	text-decoration: none;
+	
+	transition: all 1s linear;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+}
+
+.global-button-1:hover {
+	color: #555;
+	background-color: #fff;
+	border: 0.0625rem solid #555;
+}
+
+.headline {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+
+.loader {
+	height: 10rem;
+	position: relative;
+}
+
+.loader:after {
+	content: ' ';
+	background-image: url('../img/ajax-loader-tie.gif');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 8rem;
+	height: 5rem;
+	position: absolute;
+	left: 45%;
+	top: 45%;
+}

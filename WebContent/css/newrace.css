@@ -1,0 +1,27 @@
+.form-wrapper {
+	padding-top: 0.5rem;
+}
+
+.form-wrapper .form-headline {
+	margin-bottom: 1rem;
+	margin-top: 0;
+}
+
+.form-wrapper .form-row > label {
+	width: 35%;
+	float: left;
+}
+.form-wrapper .form-row > input {
+	width: 40%;
+	float: left;
+}
+
+.form-wrapper .battle-value-container > label {
+	float: right;
+	width: 80%;
+	margin-left: 5%;
+}
+.form-wrapper .battle-value-container > input {
+	float: left;
+	width: 15%;
+}

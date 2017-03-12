@@ -1,0 +1,27 @@
+<taglib>
+  <tlib-version>1.0</tlib-version>
+  <jsp-version>2.0</jsp-version>
+  <short-name>Custom TLD</short-name>
+  <tag>
+    <name>prop</name>
+    <tag-class>frontend.tags.Prop</tag-class>
+    <body-content>empty</body-content>
+    <attribute>
+       <name>key</name>
+    </attribute>
+    <description>
+    	Gets the Value for the given Key
+    </description>
+  </tag>
+  <tag>
+    <name>print</name>
+    <tag-class>frontend.tags.Print</tag-class>
+    <body-content>empty</body-content>
+    <attribute>
+       <name>value</name>
+    </attribute>
+    <description>
+    	Prints Dictonary Value
+    </description>
+  </tag>
+</taglib>

@@ -1,0 +1,95 @@
+
+.race-container .race-inner,
+.tech-container .tech-inner {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.race-container .race-inner .race-name,
+.tech-container .tech-inner .tech-name {
+	display: inline-block;
+	vertical-align: middle;
+	width: 7rem;
+	margin-right: 1rem;
+}
+
+.tech-container .tech-inner .tech-name {
+	width: 10rem;
+}
+.race-container .race-inner .more-infos {
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.race-container .race-inner .race-body,
+.race-container .race-inner .tech-body {
+	display: none;
+}
+
+.race-container .race-inner .race-body.show,
+.race-container .race-inner .tech-body.show {
+	display: block;
+}
+
+.race-container .race-inner .race-body .sub-headline {
+	font-wight: bold;
+	font-size: 1rem;
+	padding-bottom: 0.5rem;
+}
+
+.race-container .race-inner .race-body .battle-value-headline {
+	border-top: 0.0625rem solid #fff;
+	font-weight: bold;
+	margin-top: 1rem;
+}
+
+.race-container .race-inner .race-body .battle-value-container .item {
+	padding: 0.5rem;
+	float: left;
+	width: 25%;
+	border-top: 0.0625rem solid #fff;
+	height: 4rem;
+}
+.race-container .race-inner .race-body .battle-value-container .item .label {
+	font-weight: bold;	
+}
+
+.race-container .race-inner .race-body .battle-value-container .item .label:after {
+	content: ':';
+}
+
+.tech-container .tech-inner .tech-body {
+	padding: 0.5rem;	
+}
+
+.game-container .game-row {
+	padding-top: 0.5rem;
+	padding-botto: 0.5rem;
+}
+
+.game-container .game-row .cb-container {
+	display: inline-block;
+	width: 5%;
+}
+
+.game-container .game-row .desc-container {
+	display: inline-block;
+	width: 95%;
+}
+
+.game-container .game-row .desc-container label {
+	font-weight: bold;
+}
+
+.footer-container {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.footer-container .link-container {
+	width: 25%;
+	float: left;
+	text-align: center;
+}
