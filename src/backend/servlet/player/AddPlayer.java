@@ -30,6 +30,7 @@ public class AddPlayer extends AbstractGameServlet {
 		
 		pRO.setPlayerId(UUID.randomUUID().toString());
 		pRO.setGameId(this.getCurrentGameId(request));
+		pRO.setAbillitys(getRaceHelper().getRace(pRO.getRaceId()));
 		getPlayerHelper().saveObject(pRO);
 		
 		resp.setSuccess(Boolean.TRUE);

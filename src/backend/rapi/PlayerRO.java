@@ -1,5 +1,7 @@
 package backend.rapi;
 
+
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mongodb.BasicDBObject;
 
 public class PlayerRO extends BasicDBObject {
@@ -12,6 +14,7 @@ public class PlayerRO extends BasicDBObject {
 	private String raceId;
 	private String gameId;
 	private String playerId;
+	private RaceRO abillitys;
 	
 	public String getPlayerName() 
 	{	
@@ -56,6 +59,29 @@ public class PlayerRO extends BasicDBObject {
 	public void setPlayerId(String playerId) {
 		this.playerId = playerId;
 		this.put("playerId", playerId);
+	}
+	public RaceRO getAbillitys() {
+		if(this.abillitys == null) {
+			ObjectMapper mapper = new ObjectMapper();
+			try {
+				this.abillitys = mapper.readValue(this.getString("abillitiys"),RaceRO.class);
+			}catch (Exception e) {
+				this.abillitys = null;
+				System.out.println(e.getMessage());
+			}
+		}
+		return abillitys;
+	}
+	public void setAbillitys(RaceRO abillitys) {
+		
+		ObjectMapper mapper = new ObjectMapper();
+		try {
+			this.put("abillitys",mapper.writeValueAsString(abillitys));
+		}catch (Exception e) {
+			System.out.println(e.getMessage());
+			this.abillitys = null;
+		}
+		this.abillitys = abillitys;
 	}
 	
 }

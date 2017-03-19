@@ -48,4 +48,13 @@ public class PlayerHelper extends AbstractDBHelper {
 		}
 		
 	}
+	
+	public void updateObject(PlayerRO playerRO) {
+		
+		PlayerRO searchObj = new PlayerRO();
+		
+		searchObj.setPlayerId(playerRO.getPlayerId());
+		
+		getCollection().update(searchObj, playerRO);
+	}
 }
